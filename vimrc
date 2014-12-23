@@ -50,12 +50,12 @@ set number
 set showcmd
 
 " autocmd FileType python setlocal et sta sw=4 sts=4
-au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
+" au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
 " they're equal
 " set ts=8 et sw=4 sts=4
-" set tabstop=8 expandtab shiftwidth=4 softtabstop=4
+set tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
